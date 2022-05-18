@@ -159,6 +159,7 @@ button {
   align-items: center;
 }
 .nav_logo{
+  color: white;
   display: inline-flex;
   align-items: center;
   column-gap: .25rem;
@@ -208,12 +209,106 @@ button {
 }
 
 /* Change background header */
-
-
 /* Active link */
 
-
 /*=============== HOME ===============*/
+.home{
+  background: linear-gradient(170deg,
+              hsl(0, 0%, 22%) 0%,
+                hsl(0, 0%, 6%) 30%);
+  padding-bottom: 0; /*The home will end where the img end*/
+}
+.home_container{
+  padding-top: 4rem;
+  row-gap: 2.5rem;
+}
+
+.home_title,
+.home_value-number
+{
+  color: #fff;
+}
+
+.home_title{
+  font-size: var(--biggest-font-size);
+  line-height: 120%;
+  margin-bottom: 1rem;
+}
+
+.home_description{
+  color: var(--text-color-light);
+  margin-bottom: 1.5rem;
+}
+
+.home_search{
+  background-color: var(--body-color);
+  padding: .35rem .35rem .35rem .75rem;
+  display: flex;
+  align-items: center;
+  border-radius: .75rem;
+  border: 3px solid var(--text-color-light);
+  margin-bottom: 2rem;
+}
+
+.home_search i{
+  color: var(--first-color);
+  font-size: 1.25rem;
+}
+
+.home_search-input{
+  width: 90%;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  margin: 0 .5rem;
+}
+
+.home_search-input::placeholder{
+  color: var(--text-color-light);
+}
+
+.home_value{
+  display: flex;
+  column-gap: 2.5rem;
+  justify-content: center;
+}
+
+.home_value-number{
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-medium);
+}
+
+.home_value-number span{
+  color: var(--second-color);
+}
+
+.home_images{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.home_orbe{
+  /* width: 16.56rem;
+  height: 17rem; */
+  width: 265px;
+  height: 284px;
+  background: linear-gradient(180deg,
+              hsl(0, 0%, 16%) 93%,
+              hsl(0, 0%, 67%) 100%);
+  border-radius: 135px 135px 0 0;
+}
+
+.home_img{
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 125px 125px 12px 12px;
+  display: inline-flex;
+  align-items: flex-end;
+  bottom: -1.5rem;
+  box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
+}
 
 
 /*=============== BUTTON ===============*/
