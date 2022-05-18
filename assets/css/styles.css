@@ -342,6 +342,21 @@ button {
 }
 
 /*=============== LOGOS ===============*/
+.logos_container{
+  padding-top: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 2rem;
+  justify-items: center;
+}
+.logos_img img{
+  height: 4rem;
+  opacity: .3;
+  transition: .3s;
+}
+
+.logos_img img:hover{
+  opacity: .8;
+}
 
 
 /*=============== POPULAR ===============*/
