@@ -358,18 +358,140 @@ button {
   opacity: .8;
 }
 
-
 /*=============== POPULAR ===============*/
+.popular_container{
+  padding: 1rem 0 5rem;
+}
+.popular_card{
+  width: 18.825rem;
+  padding: .5rem .5rem 1.5rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+  transition: .4s;
+}
+.popular_img{
+  border-radius: 1rem;
+  margin-bottom: .7rem;
+}
 
-
-/* Swiper class */
-
+.popular_price{
+  color: var(--text-color);
+  margin-bottom: .3rem;
+}
+.popular_price span{
+  color: var(--second-color);
+}
+.popular_card:hover{
+  box-shadow: 0 12px 16px hsla(228, 66%, 45%, .1);
+}
 
 /*=============== VALUE ===============*/
+.value_container{
+  row-gap: 2rem;
+}
+
+.value_img{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.value_orbe{
+  width: 266px;
+  height: 316px;
+  background-color: hsl(228, 24%, 97%);
+  border-radius: 135px 135px 16px 16px;
+}
+.value_IMG{
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 125px 125px 12px 12px;
+  inset: 0;
+  margin: auto;
+  box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
+}
+
+.value_description{
+  font-size: var(--medium-font-size);
+  margin-bottom: 2rem;
+}
+
+.value_accordion{
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.value_accordion-item{
+  background-color: var(--body-color);
+  border: 2px solid var(--border-color);
+  border-radius: .5rem;
+  padding: 1rem .75rem;
+}
+
+.value_accordion-header{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.value_accordion-icon{
+  background-color: var(--first-color-lighten);
+  padding: 5px;
+  border: 0.25rem;
+  font-size: 18px;
+  color: var(--first-color);
+  margin-right: .75rem;
+  transition: .3s;
+}
+
+.value_accordion-title{
+  font-size: var(--font-medium);
+}
+
+.value_accordion-arrow{
+  display: inline-flex;
+  background-color: var(--first-color-lighten);
+  padding: 0.25rem;
+  color: var(--first-color);
+  border-radius: 2px;
+  font-size: 10px;
+  margin-left: auto;
+  transition: .3s;
+}
+
+.value_accordion-arrow i{
+  transition: .4s;
+}
+
+.value_accordion-description{
+  font-size: var(--font-medium);
+  padding: 1.25rem 2.5rem 0 2.75rem;
+}
+
+.value_accordion-content{
+  overflow: hidden;
+  height: 0;
+  transition: all .25s ease;
+}
 
 
 /*Rotate icon and add shadows*/
+.accordion-open{
+  box-shadow: 0 12px 32px hsla(228, 66%, 45%, .1);
+}
 
+.accoridon-open .value_accordion-icon{
+  box-shadow: 0 4px 4px hsla(228, 66%, 45%, .1);
+}
+
+.accordion-open .value_accordion-arrow{
+  box-shadow: 0 2px 4px hsla(228, 66%, 45%, .1);
+}
+.accordion-open .value_accordion-arrow i{
+  transform: rotate(-180deg);
+}
 
 /*=============== CONTACT ===============*/
 
