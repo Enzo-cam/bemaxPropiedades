@@ -141,6 +141,9 @@ body.dark-theme{
 .dark-theme .subscribe__container{
   background-color: var(--container-color);
 }
+.dark-theme .logos_img img{
+  opacity: 1;
+}
 
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -723,7 +726,7 @@ body.dark-theme{
 }
 
 .footer__info{
-  padding-bottom: 6rem;
+  padding-bottom: 2rem;
   margin-top: 5rem;
   flex-direction: column;
   text-align: center;
@@ -781,12 +784,234 @@ body.dark-theme{
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 350px ) {
+    .container{
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
 
+    .section{
+      padding: 3.5rem 0 1rem;
+    }
+
+    .home{
+      padding-bottom: 0;
+    }
+
+    .contact__card{
+      grid-template-columns: repeat(1, 180px);
+      justify-content: center;
+    }
+}
 
 /* For medium devices */
+@media screen and (min-width: 576px){
+  .nav_menu{
+    width: 342px;
+  }
 
+  .home_search{
+    width: 412px;
+  }
+
+  .contact__card{
+    grid-template-columns: repeat(2, 192px);
+    justify-content: center;
+  }
+
+  .footer__content{
+    grid-template-columns: repeat(3, max-content);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .home_container{
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 2rem;
+  }
+
+  .home_orbe{
+    align-self: flex-end;
+  }
+  .home_value{
+    padding-bottom: 2rem;
+  }
+
+  .logos_container{
+    grid-template-columns: repeat(4, max-content);
+    justify-content: center;
+  }
+
+  .value_container,
+  .contact__container{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .contact__images{
+    order: 1;
+  }
+  .contact__card{
+    justify-content: initial;
+  }
+
+  .subscribe__container{
+    padding: 3rem 13 rem;
+  }
+
+  .footer__container{
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+  }
+}
 
 /* For large devices */
+@media screen and (min-width: 1023px){
+  .section{
+    padding: 1rem;
+  }
+  .section_title{
+    font-size: 2.3rem;
+  }
+  .section__subtitle{
+    font-size: var(--normal-font-size);
+  }
 
+  .nav{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: calc(var(--header-height)) + 1.5rem ;
+  }
 
+  .nav_menu{
+    width: initial;
+    margin-left: 30%;
+  }
+
+  .nav_list{
+    display: flex;
+    column-gap: 3rem;
+  }
+  .nav_link{
+    color: var(--text-color-light);
+  }
+  .nav_link i{
+    display: none;
+  }
+
+  .nav_button{
+    display: inline-block;
+  }
+  .active-link{
+    background: none;
+    box-shadow: none;
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+  }
+
+  .change-theme{
+    margin: 0 3rem;
+  }
+
+  .scroll-header .nav_link,
+  .scroll-header .change-theme{
+    color: var(--text-color);
+  }
+
+  .scroll-header .active-link{
+    color: var(--first-color);
+  }
+
+  .home{
+    padding-bottom: 0;
+  }
+
+  .home_container{
+    padding: 4rem;
+    column-gap: 2rem;
+  }
+
+  .home_orbe{
+    width: 504px;
+    height: 611px;
+    border-radius: 256px 256px 0 0;
+  }
+
+  .home_img{
+    width: 472px;
+    height: 634px;
+    border-radius: 236px 236px 12px 12px;
+    bottom: -2rem;
+  }
+  .popular_container{
+    padding-top: 3rem;
+  }
+  .popular_card{
+    width: 320px;
+    padding: .8rem .8rem 2rem;
+  }
+
+  .value_container{
+    align-items: flex-start;
+    column-gap: 5rem;
+  }
+  .value_orbe,
+  .contact__orbe{
+    width: 501px;
+    height: 641px;
+    border-radius: 258px 258px 16px 16px;
+  }
+  .value_IMG,
+  .contact__img{
+    width: 461px;
+    height: 601px;
+    border-radius: 238px 238px 12px 12px;
+  }
+  .value_IMG img,
+  .contact__img img{
+    max-width: initial;
+    width: 490px;
+  }
+
+  .value_description{
+    margin-bottom: 2rem;
+  }
+  .value_accordion-item{
+    padding: 1.3rem 1.3rem 1.3rem 1rem;
+  }
+  .subscribe__title{
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .footer__content{
+    grid-template-columns: repeat(4, max-content);
+  }
+  .footer__info{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home_container{
+    column-gap: 4rem;
+  }
+}
 /* For 2K & 4K resolutions */
+@media screen and (min-width: 2040px) {
+  body{
+    zoom: 1.5;
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  body{
+    zoom: 2;
+  }
+}
